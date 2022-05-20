@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+#include<cstring>
+
+class suplier{
+	
+	private:
+		char suplier_name[];
+		char suplier_email[];
+		
+	public:
+		
+		suplier();
+		suplier( char suplier_name[],char suplier_email[]);
+		void getsuplier_name();
+		void getsuplier_email();
+		
+	
+};
+
+suplier::suplier()
+{
+	strcpy(suplier_name,"");
+	strcpy(suplier_email, "");
+	
+}
+
+suplier::suplier( char suplier_name[],char suplier_email[])
+{
+	strcpy(suplier_name,suplier_name);
+	strcpy(suplier_email,suplier_email);
+}
+
+void suplier::getsuplier_name(){
+}
+
+void suplier::getsuplier_email(){
+}
+
+int main ()
+{
+	suplier("Sarath Pranandu","sarathpranndu24@gmail.com");
+	
+	return 0;
+}
