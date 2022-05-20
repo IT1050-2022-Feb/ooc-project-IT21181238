@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+#include<cstring>
+
+class docter{
+	
+	private:
+		
+		char doctername[];
+		char email[];
+		char type[];
+		
+	public:
+		docter();
+		docter(char name[],char email[],char type[]);
+		void getdoctername();
+		void getemail();
+		void gettype();
+};
+
+docter::docter(){
+	
+	strcpy(doctername,"");
+	strcpy(email, "");
+	strcpy(type,"");
+}
+
+docter::docter(char name[],char email[],char type[]){
+	
+	strcpy(doctername,name);
+	strcpy(email,email);
+	strcpy(type,type);
+}
+
+void docter::getdoctername(){
+}
+
+void docter::getemail(){
+}
+
+void docter::gettype(){
+}
+
+int main()
+{
+	docter("Dr.Sadharas","Doctersadharas39@gmail.com","dentist");
+	
+	return 0;
+}
